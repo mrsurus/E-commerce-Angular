@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NzButtonSize } from 'ng-zorro-antd/button';
 
 @Component({
   selector: 'app-main-home',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-home.component.css']
 })
 export class MainHomeComponent {
-
+  size: NzButtonSize = 'default';
 }

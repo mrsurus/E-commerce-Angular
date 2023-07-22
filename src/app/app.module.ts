@@ -24,6 +24,11 @@ import {NzTableModule} from 'ng-zorro-antd/table';
 import {NzButtonModule} from 'ng-zorro-antd/button';
 import { HomeTableComponent } from './MyComponents/home/main-home/home-table/home-table.component'
 import { NzIconModule } from 'ng-zorro-antd/icon'
+import { NzCascaderModule } from 'ng-zorro-antd/cascader';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzTreeViewModule } from 'ng-zorro-antd/tree-view';
+
+
 
 registerLocaleData(en);
 
@@ -49,7 +54,10 @@ registerLocaleData(en);
     NzDividerModule,
     NzTableModule,
     NzButtonModule,
-    NzIconModule
+    NzIconModule,
+    NzCascaderModule,
+    NzDropDownModule,
+    NzTreeViewModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
