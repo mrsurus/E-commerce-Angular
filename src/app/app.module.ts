@@ -27,6 +27,8 @@ import { NzIconModule } from 'ng-zorro-antd/icon'
 import { NzCascaderModule } from 'ng-zorro-antd/cascader';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzTreeViewModule } from 'ng-zorro-antd/tree-view';
+import { HomechartComponent } from './MyComponents/home/homechart/homechart.component';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 
 
 
@@ -42,6 +44,7 @@ registerLocaleData(en);
     HomeSidebarComponent,
     MainHomeComponent,
     HomeTableComponent,
+    HomechartComponent,
     
   ],
   imports: [
@@ -57,7 +60,8 @@ registerLocaleData(en);
     NzIconModule,
     NzCascaderModule,
     NzDropDownModule,
-    NzTreeViewModule
+    NzTreeViewModule,
+    NzCheckboxModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

@@ -1,0 +1,76 @@
+<nz-table class="bg-white border border-white"  #borderedTable [nzData]="abcd" >
+    <div class="grid grid-cols-9  ">
+        <div class="grid grid-cols-9 col-span-3 ">
+            <p class="h-full text-center my-auto p-2 border">
+                <label nz-checkbox [(ngModel)]="checked"></label> 
+            </p>
+            <p class="h-full text-center my-auto p-2 border">
+                
+            </p>
+            <p class="h-full text-center my-auto p-2 border">
+                
+            </p>
+            <p class="h-full text-center my-auto p-2 border">
+
+            </p>
+            <p class="h-full text-center my-auto p-2 border">
+
+            </p>
+            <p class="h-full text-center my-auto p-2 border">
+                ID
+            </p>
+            <p class="h-full text-center my-auto p-2 border">
+
+            </p>
+            <p class="h-full text-center my-auto p-2 border">
+
+            </p>
+            <p class="h-full text-center my-auto p-2 border">
+
+            </p>
+        </div>
+        <div class="border flex items-center justify-center">Subject</div>
+        <div class="border flex items-center justify-center">Requester Name</div>
+        <div class="border flex items-center justify-center">Created Date</div>
+        <div class="border flex items-center justify-center">Status</div>
+        <div class="border flex items-center justify-center">Priority</div>
+        <div class="border flex items-center justify-center">Assigned to</div>
+    </div>
+    <div class="grid grid-cols-9" *ngFor="let data of borderedTable.data"  >
+        <div class="grid grid-cols-9 col-span-3">
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+            <p class="h-full text-center my-auto p-2 ">
+                a
+            </p>
+        </div>
+        <div class="border flex items-center justify-center text-blue-500">{{data.Subject}}</div>
+        <div class="border flex items-center justify-center">b</div>
+        <div class="border flex items-center justify-center">b</div>
+        <div class="border flex items-center justify-center">b</div>
+        <div class="border flex items-center justify-center">b</div>
+        <div class="border flex items-center justify-center">b</div>
+    </div>
+</nz-table>

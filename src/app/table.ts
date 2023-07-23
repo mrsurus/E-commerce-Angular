@@ -14,3 +14,12 @@ export interface FlatNode {
   level: number;
   disabled: boolean;
 }
+
+export interface ChartData{
+  Subject: string,
+  RequsterName: string, 
+  CreatedDate: string,
+  Status: string,
+  Priority: string,
+  assignTo: string,
+}
