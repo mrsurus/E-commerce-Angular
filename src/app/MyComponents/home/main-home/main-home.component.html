@@ -1,9 +1,33 @@
 <div class="bg-white w-full border ">
     <div class="flex gap-8 font-semibold text-gray-700 p-2">
-        <select class="  rounded-lg border-gray-300 ">
-            <option class="" value="">Details</option>
-        </select>
-        <p>Resolution</p>
+        <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+            Details
+            <span nz-icon nzType="down"></span>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+            <ul class="w-36 mt-32" nz-menu>
+                <li nz-menu-item>Calender</li>
+                <li nz-menu-item>Chat</li>
+                <li nz-menu-item>Kanban</li>
+                <li nz-menu-item>Board File</li>
+                <li nz-menu-item>Manager</li>
+                <li nz-submenu nzTitle="Email">
+                    <ul>
+                        <li nz-menu-item>saimon@gmail.com</li>
+                        <li nz-menu-item>mrsurusmk07@gmail.com</li>
+                    </ul>
+                </li>
+                <li nz-submenu nzTitle="Contacts">
+                    <ul>
+                        <li nz-menu-item>saimon@gmail.com</li>
+                        <li nz-menu-item>mrsurusmk07@gmail.com</li>
+                    </ul>
+                </li>
+                <li nz-menu-item>Gallery</li>
+                <li nz-menu-item>Projects</li>
+            </ul>
+        </nz-dropdown-menu>
+        <p (click)="greetFunction()">Resolution</p>
         <p>Tasks</p>
         <p>Checklist</p>
         <p>Work logs</p>
@@ -20,19 +44,13 @@
             </div>
         </div>
         <div class=" flex gap-4 items-center">
-            <a class="inline-flex items-center gap-2 rounded border h-8 border-indigo-600 bg-indigo-600 px-6 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-                href="/download">
-                <span class="text-sm font-medium"> Details </span>
-            </a>
-            <a class="inline-flex items-center gap-2 rounded border h-8 border-indigo-600 bg-indigo-600 px-6 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-                href="/download">
-                <span class="text-sm font-medium"> Assign </span>
-            </a>
-            <a nz-dropdown nz-button [nzSize]="size" nzType="primary" nzTrigger="click" [nzDropdownMenu]="menu">
+            <button nz-button nzType="primary">Details</button>
+            <button nz-button nzType="primary">Assign</button>
+            <a nz-dropdown nz-button [nzSize]="size" nzType="primary" nzTrigger="click" [nzDropdownMenu]="actions">
                 Actions
                 <span nz-icon nzType="down"></span>
             </a>
-            <nz-dropdown-menu #menu="nzDropdownMenu">
+            <nz-dropdown-menu #actions="nzDropdownMenu">
                 <ul nz-menu>
                     <li nz-menu-item>Download Json</li>
                     <li nz-menu-item>Json Upload</li>
@@ -47,3 +65,44 @@
 </div>
 <app-home-table></app-home-table>
 <app-home-table></app-home-table>
+<div class="bg-white mt-2">
+    <div class="flex border h-9 px-3 justify-between items-center ">
+        <p class=" m-0 font-bold">Form 1</p>
+        <div>
+            <a nz-button [nzSize]="size" nzType="link">Details</a>
+            <a nz-button [nzSize]="size" nzType="link">Assign</a>
+            <span nz-icon nzType="down" nzTheme="outline"></span>
+        </div>
+    </div>
+    <nz-table nzShowPagination="false" #borderedTable nzBordered="true" [nzData]="listOfData">
+        <tbody class="">
+            <tr *ngFor="let data of borderedTable.data.slice(0,3)">
+                <td class="p-0 bg-gray-100  border">Name</td>
+                <td class=" p-0">{{ data.name }}</td>
+                <td class="p-0 bg-gray-100">Name</td>
+                <td class="p-0">{{data.name}}</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p class="font-bold">Please Download the specified file from the given link</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dicta impedit exercitationem facere
+                    modi iste sint maxime error totam nostrum eveniet mollitia harum esse consectetur sed eius enim,
+                    nisi quam suscipit, soluta vel provident architecto earum. Facilis aliquam laudantium corrupti.
+                </td>
+            </tr>
+            <tr *ngFor="let data of borderedTable.data.slice(0,1)">
+                <td class="p-0 bg-gray-100  border">Name</td>
+                <td class=" p-0">{{ data.name }}</td>
+                <td class="p-0 bg-gray-100">Name</td>
+                <td class="p-0">{{data.name}}</td>
+            </tr>
+        </tbody>
+    </nz-table>
+    
+</div>
+<div class="flex border h-9 px-3  items-center m-3 ">
+    <div>
+        <button nz-button nzType="primary" [nzSize]="size2">Save </button>
+        <button class="bg-gray-300 rounded h-8 ml-2 w-24 font-semibold text-sm m-1">Cancel</button>
+    </div>
+</div>

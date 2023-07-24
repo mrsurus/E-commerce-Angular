@@ -7,11 +7,11 @@
     </div>
     <section class="flex gap-2 ">
         <div class=" w-80 h-screen">
-            <app-home-sidebar></app-home-sidebar>
+            <app-home-sidebar [patalam]="visiable" ></app-home-sidebar>
         </div>
         <div class=" w-full">
-            <!-- <app-main-home></app-main-home> -->
-            <app-homechart></app-homechart>
+            <app-main-home [greetFunction]="callGreetFunction"  ></app-main-home>
+            <!-- <app-homechart></app-homechart> -->
         </div>
     </section>
 </div>

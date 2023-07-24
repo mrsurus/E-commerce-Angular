@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NzTreeFlatDataSource, NzTreeFlattener } from 'ng-zorro-antd/tree-view';
 import { FlatTreeControl } from '@angular/cdk/tree';
 import { SelectionModel } from '@angular/cdk/collections';
@@ -59,6 +59,11 @@ const TREE_DATA: TreeNode[] = [
   styleUrls: ['./home-sidebar.component.css']
 })
 export class HomeSidebarComponent {
+
+  @Input() patalam! : boolean;
+
+  
+ 
 
   private transformer = (node: TreeNode, level: number): FlatNode => ({
     expandable: !!node.children && node.children.length > 0,

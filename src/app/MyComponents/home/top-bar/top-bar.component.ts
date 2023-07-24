@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NzCascaderOption } from 'ng-zorro-antd/cascader';
 import { NzButtonSize } from 'ng-zorro-antd/button';
 
@@ -53,5 +53,7 @@ export class TopBarComponent {
   }
 
   size: NzButtonSize = 'large';
+  sized: NzButtonSize = 'default'
 
+  
 }

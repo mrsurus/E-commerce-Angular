@@ -10,19 +10,57 @@ export class HomechartComponent {
 
   abcd: ChartData [] = [
     {
-      Subject: 'Demo10-demo',
-      RequsterName: 'Shawon Adams',
-      CreatedDate: '01/07/19, 6.00 pm',
-      Status: 'Closed',
-      Priority: 'Low' ,
+      id: 3 ,
+      subject: 'Demo10-demo',
+      requsterName: 'Shawon Adams',
+      createdDate: '01/07/19, 6.00 pm',
+      status: 'Closed',
+      priority: 'Low' ,
       assignTo: 'Gerald Battel' 
      },
     {
-      Subject: 'Demo10-demo',
-      RequsterName: 'Shawon Adams',
-      CreatedDate: '01/07/19, 6.00 pm',
-      Status: 'Closed',
-      Priority: 'Low' ,
+      id: 3 ,
+      subject: 'Demo10-demo',
+      requsterName: 'Shawon Adams',
+      createdDate: '01/07/19, 6.00 pm',
+      status: 'Closed',
+      priority: 'Low' ,
+      assignTo: 'Gerald Battel' 
+     },
+    {
+      id: 3 ,
+      subject: 'Demo10-demo',
+      requsterName: 'Shawon Adams',
+      createdDate: '01/07/19, 6.00 pm',
+      status: 'Closed',
+      priority: 'Low' ,
+      assignTo: 'Gerald Battel' 
+     },
+    {
+      id: 3 ,
+      subject: 'Demo10-demo',
+      requsterName: 'Shawon Adams',
+      createdDate: '01/07/19, 6.00 pm',
+      status: 'Closed',
+      priority: 'Low' ,
+      assignTo: 'Gerald Battel' 
+     },
+    {
+      id: 3 ,
+      subject: 'Demo10-demo',
+      requsterName: 'Shawon Adams',
+      createdDate: '01/07/19, 6.00 pm',
+      status: 'Closed',
+      priority: 'Low' ,
+      assignTo: 'Gerald Battel' 
+     },
+    {
+      id: 3 ,
+      subject: 'Demo10-demo',
+      requsterName: 'Shawon Adams',
+      createdDate: '01/07/19, 6.00 pm',
+      status: 'Closed',
+      priority: 'Low' ,
       assignTo: 'Gerald Battel' 
      },
     

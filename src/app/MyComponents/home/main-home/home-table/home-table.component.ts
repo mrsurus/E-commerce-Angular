@@ -27,10 +27,7 @@ export class HomeTableComponent {
     },
     {
       name: 'Faisal Tarar',
-    },
-    {
-      name: 'Faisal Tarar',
-    },
+    }
    
   ];
 

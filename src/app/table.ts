@@ -16,10 +16,11 @@ export interface FlatNode {
 }
 
 export interface ChartData{
-  Subject: string,
-  RequsterName: string, 
-  CreatedDate: string,
-  Status: string,
-  Priority: string,
+  id: number,
+  subject: string,
+  requsterName: string, 
+  createdDate: string,
+  status: string,
+  priority: string,
   assignTo: string,
 }
